@@ -1,0 +1,144 @@
+/* start variables */
+
+/* end variables */
+
+/* start global roles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+/* end global roles */
+
+/* start header */
+.header {
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    width: 60px;
+}
+
+.header .links{
+    position: relative;
+}
+
+.header .links:hover{
+    cursor: pointer;
+}
+
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+
+.header .links:hover ul{
+    display: block;
+}
+
+.header .links:hover .icon span{
+    background-color: #10cab7;
+}
+
+.header .links .icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 30px;
+    margin-left: auto;
+}
+
+.header .links .icon span{
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;;
+}
+
+.header .links .icon span:first-child{
+    width: 100%;
+}
+.header .links .icon span:nth-child(2){
+    width: 70%;
+    transition: .3s;
+}
+.header .links .icon span:last-child{
+    width: 100%;
+}
+.header .links ul{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 15px);
+    list-style: none;
+    background-color: #10cab738;
+    margin: 0;
+    padding: 0;
+    min-width: 200px;
+    transition: .3s;
+}
+
+.header .links ul:before {
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #10cab738 transparent;
+    position: absolute;
+    top: -20px;
+    right: 5px;
+}
+
+.header .links ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+
+.header .links ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px 15px 35px;
+    color: #333;
+    transition: .3s;
+}
+
+.header .links ul li a:hover{
+    padding-left: 45px;
+}
+/* end header */
