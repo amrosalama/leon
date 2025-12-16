@@ -164,7 +164,7 @@ body {
   right: 0;
   top: calc(100% + 20px);
   list-style: none;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   margin: 0;
   padding: 0;
   min-width: 200px;
@@ -181,21 +181,21 @@ body {
   content: "";
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent var(--main-color) transparent;
+  border-color: transparent transparent var(--secondary-color) transparent;
   position: absolute;
   top: -20px;
   right: 5px;
 }
 
 .header .links ul li:not(:last-child) a {
-  border-bottom: 1px solid var(--light-color);
+  border-bottom: 1px solid var(--text-color);
 }
 
 .header .links ul li a {
   display: block;
   text-decoration: none;
   padding: 15px 15px 15px 35px;
-  color: var(--secondary-color);
+  color: var(--text-color);
   transition: 0.3s;
 }
 
